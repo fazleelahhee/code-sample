@@ -1,0 +1,35 @@
+{
+    "name": "fazle/coding-example",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Fazle\\CodingExample\\": "src/",
+            "Fazle\\CodingExampleTest\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fazle elahee",
+            "email": "felahee@gmail.com"
+        }
+    ],
+    "require": {
+        "tightenco/collect": "^8.83"
+    },
+
+    "scripts": {
+        "phpcs": [
+          "phpcs"
+        ],
+        "phpcbf": [
+            "phpcbf -q"
+        ],
+        "tests": [
+            "phpunit"
+        ]
+      },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpunit/phpunit": "^9.5"
+    }
+}
